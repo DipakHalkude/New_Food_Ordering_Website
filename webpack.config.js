@@ -1,25 +1,34 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',  // Ensure this path matches your actual directory structure
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  mode: 'development',  // Use 'production' for production builds
+  mode: 'development', // Change to 'production' for production builds
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',  // Ensure Babel is installed if you use this loader
+          loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
           },
         },
       },
-      // Add additional loaders if needed
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/Project3.html', // Point to your HTML file
+    }),
+  ],
 };

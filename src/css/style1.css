@@ -1,0 +1,148 @@
+/* style1.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Baloo Bhai', cursive;
+    background-image: url('../assets/bg.jpg'); /* Path to background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navigation */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#logo img {
+    max-width: 150px;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Home Section */
+#home {
+    background-image: url('../assets/bg1.jpg'); /* Path to home background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+}
+
+#home p {
+    font-size: 1.1rem;
+}
+
+/* Services Section */
+#services-container {
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+#services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.h1-primary {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Clients Section */
+#client-section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+#clients {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.client-item img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+#contact-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
