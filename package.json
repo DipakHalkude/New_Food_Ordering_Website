@@ -1,0 +1,22 @@
+{
+  "name": "foodorderingwebsite-master",
+  "version": "1.0.0",
+  "description": "Welcome to the Food Ordering Webpage! This is a simple webpage where you can explore delicious food options and place orders. The webpage also provides a contact form for any inquiries or feedback you may have.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.7.0",
+    "webpack": "^5.93.0"
+  }
+}
